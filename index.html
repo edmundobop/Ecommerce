@@ -7,26 +7,60 @@
     <title>Loja de Ecommerce</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
 </head>
 
-<header>
-    <div class="flex-container menu">
-        <div class="flex-container"><h1>Stone4Shop</h1></div>
-        <div class="flex-container busca">
-            <input type="text" name="busca" size="40" placeholder="Busque aqui"/> 
-            <img src="./images/busca.png" alt="caixa busca">
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><h1>Stone4Shop</h1></div>
+            
+            <div class="busca">
+                <input type="text" name="busca" size="40" placeholder="Busque aqui"/> 
+                <img src="./images/busca.png" alt="caixa busca">
+            </div>
+    
+            <div class="conta">
+                <h3>Entrar / Criar Conta</h3>
+                <a href="#">Minha Conta</a>
+            </div>
+    
+            <div class="carrinho" id="car">        
+                <img src="./images/carrinho.png" alt="banner de apresentação">
+            </div>
         </div>
-        <div class="flex-container conta">
-            <h3>Entrar / Criar Conta</h3>
-            <a href="#conta">Minha Conta</a>
-        </div>
-        <div class="flex-container img">
-            <img src="./images/carrinho.png" alt="banner de apresentação">
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Categoria</a>
+        <a href="#">Rastreie seu Pedido</a>
+        <a href="#">Central de Ajuda</a>
+    </nav>
+
+    <div class="carrosel">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="box-item"><img src="images/descontos.png" alt="" srcset=""></div>
+            </div>
+            <div class="item">
+                <div class="box-item"><img src="images/descontos.png" alt="" srcset=""></div>
+            </div>
+            <div class="item">
+                <div class="box-item"><img src="images/descontos.png" alt="" srcset=""></div>
+            </div>
         </div>
     </div>
-</header>
-<body>
+
+    <script src="https://kit.fontawesome.com/3580c61539.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
     
 </body>
 </html>
