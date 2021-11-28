@@ -1,14 +1,42 @@
-@media screen and (max-width:700px){
+@media screen and (max-width:800px){
     header .container{
+        height: auto;
         display: flex;
+        align-items: center;
         flex-direction: column;
         justify-content: center;
     }
 
-    .botao{
-        margin-top: 5px;
-        width: 300px;
+    header .sub-menu{
+        padding: 10px 0 0 10px;
+        width: min-content;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
     }
+
+    header .conta{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    header .carrinho{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .busca input{
+        width: 210px;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
 }
 
 @media screen and (min-width:1000px){

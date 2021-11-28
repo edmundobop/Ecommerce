@@ -45,11 +45,15 @@ header img{
     color: dimgray;
  }
 
+ header .sub-menu{
+     display: flex;
+     justify-content: space-between;
+ }
+
 header .conta{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin-right: 50px;
  }
 
  header .conta a{
@@ -66,7 +70,19 @@ header .conta{
     color: rgb(151, 143, 143);
 }
 
+header .carrinho{
+    display: flex;
+    align-items: center;
+}
+
+header .carrinho a{
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+}
+
  nav{
+     padding-top: 20px;
      padding-left: 80px;
      padding-bottom: 10px;
      background-color: var(--azul);
@@ -85,8 +101,60 @@ nav a:hover{
 }
 
 .carrosel img{
-    width: 100%
+    height: 100%;
+    width: 100%;
 }
+
+section .produtos{
+    display: flex;
+    flex-direction: column;
+}
+
+section header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .produtos-lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.produtos-lista a{
+    text-decoration: none;
+}
+
+section .produto{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    background: rgb(255, 255, 255);
+    width: 250px;
+    height: 350px;
+    margin: 2px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 6px;
+}
+
+section .produto-info{
+    display: flex;
+    flex-direction: column;
+}
+
+section .container-ver-todos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
 
 
 
